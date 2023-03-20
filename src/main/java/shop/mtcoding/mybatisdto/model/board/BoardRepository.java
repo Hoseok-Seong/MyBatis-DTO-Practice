@@ -2,6 +2,11 @@ package shop.mtcoding.mybatisdto.model.board;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
+
+import shop.mtcoding.mybatisdto.dto.BoardDetailOutDto;
+
+@Mapper
 public interface BoardRepository {
     public int insert(Board board);
 
@@ -13,5 +18,6 @@ public interface BoardRepository {
 
     public Board findById(int id);
 
-    public Board findByUsernameAndPassword(Board board);
+    public BoardDetailOutDto findByIdJoinUser(int id);
+
 }
