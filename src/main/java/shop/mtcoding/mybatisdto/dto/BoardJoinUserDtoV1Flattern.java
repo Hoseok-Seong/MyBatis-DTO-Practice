@@ -1,15 +1,15 @@
 package shop.mtcoding.mybatisdto.dto;
 
-import java.sql.Timestamp;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.sql.Timestamp;
+
 @Getter
 @Setter
 @ToString
-public class BoardDetailOutDto {
+public class BoardJoinUserDtoV1Flattern {
     private Integer id;
     private String title;
     private String content;
@@ -20,3 +20,4 @@ public class BoardDetailOutDto {
     private String userEmail;
     private Timestamp userCreatedAt;
 }
+

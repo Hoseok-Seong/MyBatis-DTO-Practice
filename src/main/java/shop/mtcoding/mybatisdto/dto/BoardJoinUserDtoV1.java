@@ -1,22 +1,22 @@
 package shop.mtcoding.mybatisdto.dto;
 
-import java.sql.Timestamp;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.sql.Timestamp;
+
 @Getter
 @Setter
 @ToString
-public class BoardDetailOutDto2 {
+public class BoardJoinUserDtoV1 {
     private Integer id;
     private String title;
     private String content;
-    private UserDto user; // json 리턴될 때 user라고 나올 수 있게.
+    private UserDto user;
     private Timestamp createdAt;
 
-    public BoardDetailOutDto2(BoardDetailOutDto board) {
+    public BoardJoinUserDtoV1(BoardJoinUserDtoV1Flattern board) {
         this.id = board.getId();
         this.title = board.getTitle();
         this.content = board.getContent();

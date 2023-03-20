@@ -1,13 +1,13 @@
 package shop.mtcoding.mybatisdto.dto;
 
-import java.sql.Timestamp;
-
 import lombok.Getter;
 import lombok.Setter;
 
+import java.sql.Timestamp;
+
 @Getter
 @Setter
-public class BoardJoinUserDto2 {
+public class BoardJoinUserDtoV3 {
     private Integer id;
     private String title;
     private String content;
@@ -16,7 +16,7 @@ public class BoardJoinUserDto2 {
 
     @Getter
     @Setter
-    public static class UserDto { // 내부 클래스로 만들어서 쓰자.
+    public static class UserDto {
         private Integer id;
         private String username;
         private String password;

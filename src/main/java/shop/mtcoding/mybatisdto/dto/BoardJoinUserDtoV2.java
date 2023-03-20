@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class BoardJoinUserDto {
+public class BoardJoinUserDtoV2 {
     private BoardDto board;
     private UserDto user;
 }
